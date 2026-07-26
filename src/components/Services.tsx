@@ -2,10 +2,11 @@ import {
   Atom,
   Buildings,
   CalendarDots,
+  Car,
   Certificate,
   Clock,
   InstagramLogo,
-  LightningAIcon,
+  LightningIcon,
   MapPin,
   NavigationArrow,
   ShieldCheck,
@@ -56,7 +57,7 @@ export function Services() {
         text: 'text-violet-600',
       },
 
-      icon: LightningAIcon,
+      icon: LightningIcon,
 
       items: [
         {
@@ -88,16 +89,16 @@ export function Services() {
 
       items: [
         {
-          icon: Star,
-          text: 'Depoimentos de pacientes',
-        },
-        {
           icon: Stethoscope,
           text: 'Especialidades',
         },
         {
           icon: Certificate,
           text: 'Diferenciais da clínica',
+        },
+        {
+          icon: Star,
+          text: 'Depoimentos de pacientes',
         },
       ],
     },
@@ -112,7 +113,7 @@ export function Services() {
         text: 'text-sky-600',
       },
 
-      icon: MapPin,
+      icon: NavigationArrow,
 
       items: [
         {
@@ -120,7 +121,7 @@ export function Services() {
           text: 'Google Maps integrado',
         },
         {
-          icon: NavigationArrow,
+          icon: Car,
           text: 'Rotas até a clínica',
         },
         {
@@ -132,21 +133,21 @@ export function Services() {
   ]
 
   return (
-    <section id="services" className="scroll-mt-24 bg-slate-50 py-24">
+    <section id="services" className="scroll-mt-25 bg-slate-50 py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
           <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
-            Recursos
+            Serviços
           </span>
 
           <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
-            Tudo o que sua clínica precisa em um único site
+            Tudo o que seu negócio precisa em um único site
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Seu site será desenvolvido sob medida para transmitir confiança,
-            facilitar o contato com pacientes e fortalecer a presença online da
-            sua clínica.
+            Seu site será totalmente personalizado para a identidade da sua
+            empresa. Estes são alguns dos recursos mais importantes que estarão
+            presentes.
           </p>
         </div>
 
