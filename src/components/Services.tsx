@@ -1,105 +1,204 @@
-import { Globe, LayoutTemplate, Search, Wrench } from 'lucide-react'
+import {
+  Atom,
+  Buildings,
+  CalendarDots,
+  Certificate,
+  Clock,
+  InstagramLogo,
+  LightningAIcon,
+  MapPin,
+  NavigationArrow,
+  ShieldCheck,
+  Star,
+  Stethoscope,
+  UserCircleCheckIcon,
+  UsersThree,
+  WhatsappLogo,
+} from '@phosphor-icons/react/dist/ssr'
 
 export function Services() {
   const services = [
     {
-      icon: Globe,
-      title: 'Sites Institucionais',
+      title: 'Contato facilitado',
       description:
-        'Sites profissionais para clínicas, consultórios e empresas que desejam transmitir mais credibilidade e fortalecer sua presença na internet.',
+        'Facilite o primeiro contato e aumente as chances de novos agendamentos.',
+
+      color: {
+        bg: 'bg-green-100',
+        text: 'text-green-600',
+      },
+
+      icon: UserCircleCheckIcon,
+
+      items: [
+        {
+          icon: WhatsappLogo,
+          text: 'WhatsApp flutuante',
+        },
+        {
+          icon: InstagramLogo,
+          text: 'Links para redes sociais',
+        },
+        {
+          icon: CalendarDots,
+          text: 'Botão para agendamento',
+        },
+      ],
     },
+
     {
-      icon: LayoutTemplate,
-      title: 'Landing Pages',
+      title: 'Transmita confiança',
       description:
-        'Páginas desenvolvidas para divulgar serviços, campanhas e aumentar a geração de contatos e oportunidades.',
+        'Mostre a estrutura da clínica e apresente sua equipe de forma profissional.',
+
+      color: {
+        bg: 'bg-violet-100',
+        text: 'text-violet-600',
+      },
+
+      icon: LightningAIcon,
+
+      items: [
+        {
+          icon: Buildings,
+          text: 'Fotos da clínica',
+        },
+        {
+          icon: UsersThree,
+          text: 'Equipe de profissionais',
+        },
+        {
+          icon: ShieldCheck,
+          text: 'Ambiente profissional',
+        },
+      ],
     },
+
     {
-      icon: Search,
-      title: 'SEO e Performance',
+      title: 'Mostre sua autoridade',
       description:
-        'Sites rápidos e preparados para mecanismos de busca, proporcionando uma melhor experiência aos visitantes.',
+        'Destaque seus diferenciais e aumente a confiança dos pacientes.',
+
+      color: {
+        bg: 'bg-amber-100',
+        text: 'text-amber-600',
+      },
+
+      icon: Atom,
+
+      items: [
+        {
+          icon: Star,
+          text: 'Depoimentos de pacientes',
+        },
+        {
+          icon: Stethoscope,
+          text: 'Especialidades',
+        },
+        {
+          icon: Certificate,
+          text: 'Diferenciais da clínica',
+        },
+      ],
     },
+
     {
-      icon: Wrench,
-      title: 'Manutenção',
+      title: 'Localização fácil',
       description:
-        'Atualizações, melhorias e suporte para manter seu site seguro, moderno e sempre funcionando corretamente.',
+        'Ajude seus pacientes a encontrar sua clínica com apenas um clique.',
+
+      color: {
+        bg: 'bg-sky-100',
+        text: 'text-sky-600',
+      },
+
+      icon: MapPin,
+
+      items: [
+        {
+          icon: MapPin,
+          text: 'Google Maps integrado',
+        },
+        {
+          icon: NavigationArrow,
+          text: 'Rotas até a clínica',
+        },
+        {
+          icon: Clock,
+          text: 'Horário de funcionamento',
+        },
+      ],
     },
   ]
 
   return (
-    <section id="services" className="scroll-mt-25 px-6 py-10 bg-white">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-10 text-center">
+    <section id="services" className="scroll-mt-24 bg-slate-50 py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-3xl text-center">
           <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
-            Serviços
+            Recursos
           </span>
 
-          <h2 className="mt-3 text-3xl font-bold text-slate-900 lg:text-4xl">
-            Soluções para fortalecer a presença digital da sua empresa
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
+            Tudo o que sua clínica precisa em um único site
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-500">
-            Desenvolvo sites modernos, rápidos e personalizados para ajudar sua
-            empresa a transmitir mais credibilidade e conquistar novos clientes.
+          <p className="mt-6 text-lg leading-8 text-slate-600">
+            Seu site será desenvolvido sob medida para transmitir confiança,
+            facilitar o contato com pacientes e fortalecer a presença online da
+            sua clínica.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="mt-16 grid gap-8 md:grid-cols-2">
           {services.map((service) => {
-            const Icon = service.icon
+            const TitleIcon = service.icon
 
             return (
               <article
                 key={service.title}
-                className="
-                group
-                rounded-[28px]
-                border
-                border-slate-200
-                bg-white
-                p-8
-                shadow-lg
-                transition-all
-                duration-300
-                hover:border-blue-300
-                hover:shadow-2xl
-              "
+                className="rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="mb-6 flex items-center gap-5">
+                <div className="flex items-center gap-4">
                   <div
-                    className="
-                    flex
-                    h-14
-                    w-14
-                    shrink-0
-                    items-center
-                    justify-center
-                    rounded-2xl
-
-                    bg-violet-100
-                    text-violet-700
-
-                    transition-all
-                    duration-300
-
-                    group-hover:scale-110
-                    group-hover:bg-violet-700
-                    group-hover:text-white
-                  "
+                    className={`flex h-12 w-12 items-center justify-center rounded-xl ${service.color.bg}`}
                   >
-                    <Icon size={28} strokeWidth={2.2} />
+                    <TitleIcon
+                      size={26}
+                      weight="fill"
+                      className={service.color.text}
+                    />
                   </div>
 
-                  <h3 className="text-2xl font-bold leading-tight text-slate-900">
+                  <h3 className="text-2xl font-bold text-slate-900">
                     {service.title}
                   </h3>
                 </div>
 
-                <p className="leading-7 text-slate-600">
+                <p className="mt-5 leading-7 text-slate-600">
                   {service.description}
                 </p>
+
+                <ul className="mt-8 space-y-4">
+                  {service.items.map((item) => {
+                    const ItemIcon = item.icon
+
+                    return (
+                      <li
+                        key={item.text}
+                        className="flex items-center gap-3 text-slate-700"
+                      >
+                        <ItemIcon
+                          size={20}
+                          weight="fill"
+                          className={service.color.text}
+                        />
+
+                        <span>{item.text}</span>
+                      </li>
+                    )
+                  })}
+                </ul>
               </article>
             )
           })}
