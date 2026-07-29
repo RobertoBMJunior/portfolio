@@ -1,12 +1,11 @@
 import Image from 'next/image'
+import {
+  ArrowDown,
+  GithubLogo,
+  LinkedinLogo,
+} from '@phosphor-icons/react/dist/ssr'
 
 export function Hero() {
-  const telefone = '5561999743703'
-  const mensagem = encodeURIComponent(
-    'Olá! Fiquei interessado nos seus serviços, vamos conversar?'
-  )
-  const whatsappUrl = `https://wa.me/${telefone}?text=${mensagem}`
-
   return (
     <section
       id="hero"
@@ -20,12 +19,14 @@ export function Hero() {
           max-w-7xl
           items-center
           gap-2
-          lg:gap-16
           px-6
+          lg:gap-16
           lg:grid-cols-[6.5fr_3.5fr]
         "
       >
-        <div className="order-2 lg:order-1 text-center lg:text-left">
+        {/* Texto */}
+
+        <div className="order-2 text-center lg:order-1 lg:text-left">
           <span
             className="
               inline-block
@@ -38,7 +39,7 @@ export function Hero() {
               text-blue-600
             "
           >
-            Desenvolvedor Freelancer
+            Desenvolvedor Full Stack • Next.js • Node.js
           </span>
 
           <h1
@@ -53,8 +54,8 @@ export function Hero() {
               lg:text-5xl
             "
           >
-            Sites profissionais que ajudam sua empresa a transmitir mais
-            credibilidade
+            Desenvolvendo aplicações web modernas, escaláveis e com foco na
+            melhor experiência do usuário.
           </h1>
 
           <p
@@ -66,11 +67,13 @@ export function Hero() {
               text-slate-500
             "
           >
-            Desenvolvo sites modernos, rápidos e totalmente responsivos para
-            clínicas, consultórios e pequenos negócios, criando uma presença
-            online profissional que transmite confiança e facilita o contato com
-            novos clientes.
+            Desenvolvedor Full Stack com foco em Next.js, React, Node.js e
+            TypeScript. Gosto de construir aplicações rápidas, responsivas e bem
+            estruturadas, utilizando boas práticas de desenvolvimento,
+            componentes reutilizáveis e código limpo.
           </p>
+
+          {/* Cards */}
 
           <div
             className="
@@ -80,72 +83,66 @@ export function Hero() {
               sm:grid-cols-2
             "
           >
-            <div
-              className="
-                  rounded-2xl bg-white px-6 py-5 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl flex items-center gap-2 group font-medium text-(--gray-700)
+            {[
+              'React & Next.js',
+              'Node.js & APIs',
+              'TypeScript',
+              'Clean Code',
+            ].map((item) => (
+              <div
+                key={item}
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-3
+                  rounded-2xl
+                  bg-white
+                  px-6
+                  py-5
+                  font-medium
+                  text-slate-700
+                  shadow-md
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:shadow-xl
                 "
-            >
-              <span className="text-(--primary) bg-(--tertiary) rounded-full h-8 w-8 flex items-center justify-center">
-                ✓
-              </span>
+              >
+                <span
+                  className="
+                    flex
+                    h-8
+                    w-8
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-blue-100
+                    text-blue-600
+                    font-bold
+                  "
+                >
+                  ✓
+                </span>
 
-              <span className="group-hover:text-(--primary) transition-all duration-300">
-                Layout moderno
-              </span>
-            </div>
-
-            <div
-              className="
-                  rounded-2xl bg-white px-6 py-5 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl flex items-center gap-2 group font-medium text-(--gray-700) text-left
-                "
-            >
-              <span className="text-(--primary) bg-(--tertiary) rounded-full h-8 w-8 flex items-center justify-center">
-                ✓
-              </span>
-
-              <span className="group-hover:text-(--primary) transition-all duration-300">
-                Funciona perfeitamente no celular
-              </span>
-            </div>
-
-            <div
-              className="
-                  rounded-2xl bg-white px-6 py-5 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl flex items-center gap-2 group font-medium text-(--gray-700)
-                "
-            >
-              <span className="text-(--primary) bg-(--tertiary) rounded-full h-8 w-8 flex items-center justify-center">
-                ✓
-              </span>
-
-              <span className="group-hover:text-(--primary) transition-all duration-300">
-                Carregamento rápido
-              </span>
-            </div>
-
-            <div
-              className="
-                  rounded-2xl bg-white px-6 py-5 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl flex items-center gap-2 group font-medium text-(--gray-700)
-                "
-            >
-              <span className="text-(--primary) bg-(--tertiary) rounded-full h-8 w-8 flex items-center justify-center">
-                ✓
-              </span>
-
-              <span className="group-hover:text-(--primary) transition-all duration-300">
-                SEO otimizado
-              </span>
-            </div>
+                <span className="transition-colors duration-300 group-hover:text-blue-600">
+                  {item}
+                </span>
+              </div>
+            ))}
           </div>
 
-          <div className="flex flex-wrap gap-5 justify-center lg:justify-start">
+          {/* Botões */}
+
+          <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
             <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/curriculo.pdf"
+              download
               className="
                 inline-flex
                 items-center
                 justify-center
+                gap-2
                 rounded-full
                 bg-blue-600
                 px-9
@@ -160,7 +157,8 @@ export function Hero() {
                 hover:shadow-xl
               "
             >
-              Fale comigo
+              <ArrowDown size={20} weight="bold" />
+              Download CV
             </a>
 
             <a
@@ -187,12 +185,56 @@ export function Hero() {
               Ver projetos
             </a>
           </div>
+
+          {/* Links */}
+
+          <div
+            className="
+              mt-8
+              flex
+              flex-wrap
+              items-center
+              justify-center
+              gap-6
+              text-slate-500
+              lg:justify-start
+            "
+          >
+            <a
+              href="https://github.com/SEU_USUARIO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 transition-colors hover:text-blue-600"
+            >
+              <GithubLogo size={22} weight="fill" />
+              GitHub
+            </a>
+
+            <a
+              href="https://linkedin.com/in/SEU_USUARIO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 transition-colors hover:text-blue-600"
+            >
+              <LinkedinLogo size={22} weight="fill" />
+              LinkedIn
+            </a>
+
+            <a
+              href="mailto:seuemail@email.com"
+              className="transition-colors hover:text-blue-600"
+            >
+              E-mail
+            </a>
+          </div>
         </div>
+
+        {/* Foto */}
 
         <div
           className="
             order-1
-            mt-2  
+            mt-2
             flex
             justify-center
             lg:order-2
@@ -200,7 +242,6 @@ export function Hero() {
           "
         >
           <div className="relative">
-            {/* Glow atrás da foto */}
             <div
               className="
                 absolute
@@ -217,8 +258,8 @@ export function Hero() {
             <Image
               src="/Roberto.jpg"
               alt="Roberto Júnior"
-              width={380}
-              height={500}
+              width={420}
+              height={560}
               priority
               className="
                 h-40
@@ -230,8 +271,8 @@ export function Hero() {
                 md:h-56
                 md:w-56
 
-                lg:h-95
-                lg:w-75
+                lg:h-[420px]
+                lg:w-[330px]
 
                 rounded-full
                 lg:rounded-[28px]
