@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import {
   ArrowDown,
+  BracketsCurly,
+  DeviceMobile,
   GithubLogo,
+  Lightning,
   LinkedinLogo,
+  Sparkle,
 } from '@phosphor-icons/react/dist/ssr'
 
 export function Hero() {
@@ -27,7 +31,7 @@ export function Hero() {
         {/* Texto */}
 
         <div className="order-2 text-center lg:order-1 lg:text-left">
-          <span
+          {/* <span
             className="
               inline-block
               rounded-full
@@ -39,193 +43,158 @@ export function Hero() {
               text-blue-600
             "
           >
-            Desenvolvedor Full Stack • Next.js • Node.js
-          </span>
+            Desenvolvedor Full Stack
+          </span> */}
 
           <h1
             className="
-              mt-6
-              mb-6
-              max-w-3xl
-              text-3xl
-              font-bold
-              leading-tight
-              text-slate-900
-              lg:text-5xl
-            "
+      mt-6
+      mb-6
+      max-w-3xl
+      text-3xl
+      font-bold
+      leading-tight
+      text-slate-900
+      lg:text-5xl
+    "
           >
-            Desenvolvendo aplicações web modernas, escaláveis e com foco na
-            melhor experiência do usuário.
+            Desenvolvedor Full Stack
           </h1>
 
           <p
             className="
-              mb-9
-              max-w-2xl
-              text-lg
-              leading-8
-              text-slate-500
-            "
+      mb-10
+      max-w-2xl
+      text-lg
+      leading-8
+      text-slate-500
+    "
           >
-            Desenvolvedor Full Stack com foco em Next.js, React, Node.js e
-            TypeScript. Gosto de construir aplicações rápidas, responsivas e bem
-            estruturadas, utilizando boas práticas de desenvolvimento,
-            componentes reutilizáveis e código limpo.
+            Desenvolvo aplicações web modernas utilizando React, Next.js,
+            Node.js e TypeScript, criando interfaces responsivas, APIs
+            escaláveis e experiências focadas em performance, organização de
+            código e usabilidade.
           </p>
 
-          {/* Cards */}
-
-          <div
-            className="
-              mb-11
-              grid
-              gap-4
-              sm:grid-cols-2
-            "
-          >
-            {[
-              'React & Next.js',
-              'Node.js & APIs',
-              'TypeScript',
-              'Clean Code',
-            ].map((item) => (
-              <div
-                key={item}
-                className="
-                  group
-                  flex
-                  items-center
-                  gap-3
-                  rounded-2xl
-                  bg-white
-                  px-6
-                  py-5
-                  font-medium
-                  text-slate-700
-                  shadow-md
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                "
-              >
-                <span
-                  className="
-                    flex
-                    h-8
-                    w-8
-                    items-center
-                    justify-center
-                    rounded-full
-                    bg-blue-100
-                    text-blue-600
-                    font-bold
-                  "
-                >
-                  ✓
-                </span>
-
-                <span className="transition-colors duration-300 group-hover:text-blue-600">
-                  {item}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* Botões */}
-
-          <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
-            <a
-              href="/curriculo.pdf"
-              download
-              className="
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                rounded-full
-                bg-blue-600
-                px-9
-                py-4
-                font-medium
-                text-white
-                shadow-md
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:bg-blue-700
-                hover:shadow-xl
-              "
-            >
-              <ArrowDown size={20} weight="bold" />
-              Download CV
-            </a>
-
+          <div className="mb-12 flex flex-wrap justify-center gap-5 lg:justify-start">
             <a
               href="#projects"
               className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-full
-                border-2
-                border-slate-300
-                px-9
-                py-4
-                font-medium
-                text-slate-700
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-blue-600
-                hover:bg-white
-                hover:text-blue-600
-              "
+        inline-flex
+        items-center
+        justify-center
+        rounded-full
+        bg-blue-600
+        px-9
+        py-4
+        font-medium
+        text-white
+        shadow-md
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:bg-blue-700
+        hover:shadow-xl
+      "
             >
               Ver projetos
             </a>
+
+            <a
+              href="/curriculo.pdf"
+              target="_blank"
+              className="
+        inline-flex
+        items-center
+        justify-center
+        rounded-full
+        border-2
+        border-slate-300
+        bg-white
+        px-9
+        py-4
+        font-medium
+        text-slate-700
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-blue-600
+        hover:text-blue-600
+      "
+            >
+              Download CV
+            </a>
           </div>
 
-          {/* Links */}
+          <div>
+            <p
+              className="
+        mb-5
+        text-sm
+        font-semibold
+        uppercase
+        tracking-[0.18em]
+        text-slate-500
+      "
+            >
+              Tecnologias que utilizo
+            </p>
 
-          <div
-            className="
-              mt-8
-              flex
-              flex-wrap
-              items-center
-              justify-center
-              gap-6
-              text-slate-500
-              lg:justify-start
+            <div className="grid grid-cols-3 gap-4 sm:grid-cols-5">
+              {[
+                { name: 'Next.js', image: '/nextjs.svg' },
+                { name: 'React', image: '/reactjs.webp' },
+                { name: 'TypeScript', image: '/typescript.png' },
+                { name: 'Node.js', image: '/node.png' },
+                { name: 'Tailwind', image: '/tailwind.png' },
+                { name: 'JavaScript', image: '/Javascript.png' },
+                { name: 'Git', image: '/git.png' },
+                { name: 'HTML5', image: '/html.png' },
+                { name: 'CSS3', image: '/css.png' },
+                { name: 'Figma', image: '/figma.png' },
+              ].map((tech) => (
+                <div
+                  key={tech.name}
+                  className="
+            group
+            flex
+            flex-col
+            items-center
+            justify-center
+            rounded-2xl
+            border
+            border-slate-200
+            bg-white
+            p-4
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-1
+            hover:border-blue-300
+            hover:shadow-lg
+          "
+                >
+                  <Image
+                    src={tech.image}
+                    alt={tech.name}
+                    width={42}
+                    height={42}
+                    className="
+              h-10
+              w-10
+              object-contain
+              transition-transform
+              duration-300
+              group-hover:scale-110
             "
-          >
-            <a
-              href="https://github.com/SEU_USUARIO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 transition-colors hover:text-blue-600"
-            >
-              <GithubLogo size={22} weight="fill" />
-              GitHub
-            </a>
+                  />
 
-            <a
-              href="https://linkedin.com/in/SEU_USUARIO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 transition-colors hover:text-blue-600"
-            >
-              <LinkedinLogo size={22} weight="fill" />
-              LinkedIn
-            </a>
-
-            <a
-              href="mailto:seuemail@email.com"
-              className="transition-colors hover:text-blue-600"
-            >
-              E-mail
-            </a>
+                  <span className="mt-3 text-center text-sm font-medium text-slate-700">
+                    {tech.name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
