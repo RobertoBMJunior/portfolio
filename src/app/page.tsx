@@ -11,10 +11,10 @@ export default function Home() {
     <div>
       <Hero />
       <AboutMe />
+      <Experience />
       <Projects />
       <Services />
-      {/* <Experience /> */}
-      <Technologies />
+      {/* <Technologies /> */}
       <CTA />
     </div>
   )

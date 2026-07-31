@@ -35,9 +35,9 @@ export function Projects() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 text-center">
-          <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
+          {/* <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
             Portfólio
-          </span>
+          </span> */}
 
           <h2 className="mt-3 text-3xl font-bold text-slate-900 lg:text-4xl">
             Projetos em destaque

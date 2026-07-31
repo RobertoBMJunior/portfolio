@@ -14,7 +14,7 @@ export function Experience() {
         'TypeScript',
         'Tailwind CSS',
         'SEO',
-        'Performance',
+        'Responsividade',
       ],
     },
     {
@@ -29,7 +29,6 @@ export function Experience() {
         'TypeScript',
         'Radix UI',
         'Responsividade',
-        'Componentes reutilizáveis',
       ],
     },
   ]

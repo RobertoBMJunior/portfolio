@@ -10,10 +10,23 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 
 export function Hero() {
+  const technologies = [
+                { name: 'Next.js', image: '/nextjs.svg' },
+                { name: 'React', image: '/reactjs.webp' },
+                { name: 'TypeScript', image: '/typescript.png' },
+                { name: 'Node.js', image: '/node.png' },
+                { name: 'Tailwind', image: '/tailwind.png' },
+                { name: 'JavaScript', image: '/Javascript.png' },
+                { name: 'Git', image: '/git.png' },
+                { name: 'HTML5', image: '/html.png' },
+                { name: 'CSS3', image: '/css.png' },
+                { name: 'Figma', image: '/figma.png' },
+              ]
+
   return (
     <section
       id="hero"
-      className="pt-26 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.12),transparent_80%),linear-gradient(180deg,#ffffff,#f8fafc)]"
+      className="pt-26 pb-8 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.12),transparent_80%),linear-gradient(180deg,#ffffff,#f8fafc)]"
     >
       <div
         className="
@@ -28,47 +41,33 @@ export function Hero() {
           lg:grid-cols-[6.5fr_3.5fr]
         "
       >
-        {/* Texto */}
-
         <div className="order-2 text-center lg:order-1 lg:text-left">
-          {/* <span
-            className="
-              inline-block
-              rounded-full
-              bg-blue-100
-              px-6
-              py-2.5
-              text-sm
-              font-bold
-              text-blue-600
-            "
-          >
-            Desenvolvedor Full Stack
+          {/* <span className="inline-block rounded-full bg-blue-100 px-6 py-2.5 text-sm font-bold text-blue-600">
+            Dev Full Stack
           </span> */}
 
           <h1
             className="
-      mt-6
-      mb-6
-      max-w-3xl
-      text-3xl
-      font-bold
-      leading-tight
-      text-slate-900
-      lg:text-5xl
-    "
+              mt-6
+              mb-6
+              text-3xl
+              font-bold
+              leading-tight
+              text-slate-900
+              lg:text-5xl
+            "
           >
             Desenvolvedor Full Stack
           </h1>
 
           <p
             className="
-      mb-10
-      max-w-2xl
-      text-lg
-      leading-8
-      text-slate-500
-    "
+              mb-10
+              lg:max-w-2xl
+              text-lg
+              leading-8
+              text-slate-500
+            "
           >
             Desenvolvo aplicações web modernas utilizando React, Next.js,
             Node.js e TypeScript, criando interfaces responsivas, APIs
@@ -80,22 +79,22 @@ export function Hero() {
             <a
               href="#projects"
               className="
-        inline-flex
-        items-center
-        justify-center
-        rounded-full
-        bg-blue-600
-        px-9
-        py-4
-        font-medium
-        text-white
-        shadow-md
-        transition-all
-        duration-300
-        hover:-translate-y-1
-        hover:bg-blue-700
-        hover:shadow-xl
-      "
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                bg-violet-600
+                px-9
+                py-4
+                font-medium
+                text-white
+                shadow-md
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:bg-violet-700
+                hover:shadow-xl
+              "
             >
               Ver projetos
             </a>
@@ -104,23 +103,22 @@ export function Hero() {
               href="/curriculo.pdf"
               target="_blank"
               className="
-        inline-flex
-        items-center
-        justify-center
-        rounded-full
-        border-2
-        border-slate-300
-        bg-white
-        px-9
-        py-4
-        font-medium
-        text-slate-700
-        transition-all
-        duration-300
-        hover:-translate-y-1
-        hover:border-blue-600
-        hover:text-blue-600
-      "
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                border-2
+                border-amber-300
+                bg-white
+                px-9
+                py-4
+                font-medium
+                text-amber-600
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-amber-600
+              "
             >
               Download CV
             </a>
@@ -129,50 +127,39 @@ export function Hero() {
           <div>
             <p
               className="
-        mb-5
-        text-sm
-        font-semibold
-        uppercase
-        tracking-[0.18em]
-        text-slate-500
-      "
+                mb-5
+                text-sm
+                font-semibold
+                uppercase
+                tracking-[0.18em]
+                text-slate-500
+              "
             >
               Tecnologias que utilizo
             </p>
 
             <div className="grid grid-cols-3 gap-4 sm:grid-cols-5">
-              {[
-                { name: 'Next.js', image: '/nextjs.svg' },
-                { name: 'React', image: '/reactjs.webp' },
-                { name: 'TypeScript', image: '/typescript.png' },
-                { name: 'Node.js', image: '/node.png' },
-                { name: 'Tailwind', image: '/tailwind.png' },
-                { name: 'JavaScript', image: '/Javascript.png' },
-                { name: 'Git', image: '/git.png' },
-                { name: 'HTML5', image: '/html.png' },
-                { name: 'CSS3', image: '/css.png' },
-                { name: 'Figma', image: '/figma.png' },
-              ].map((tech) => (
+              {technologies.map((tech) => (
                 <div
                   key={tech.name}
                   className="
-            group
-            flex
-            flex-col
-            items-center
-            justify-center
-            rounded-2xl
-            border
-            border-slate-200
-            bg-white
-            p-4
-            shadow-sm
-            transition-all
-            duration-300
-            hover:-translate-y-1
-            hover:border-blue-300
-            hover:shadow-lg
-          "
+                    group
+                    flex
+                    flex-col
+                    items-center
+                    justify-center
+                    rounded-2xl
+                    border
+                    border-slate-200
+                    bg-white
+                    p-4
+                    shadow-sm
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:border-blue-300
+                    hover:shadow-lg
+                  "
                 >
                   <Image
                     src={tech.image}
@@ -180,13 +167,13 @@ export function Hero() {
                     width={42}
                     height={42}
                     className="
-              h-10
-              w-10
-              object-contain
-              transition-transform
-              duration-300
-              group-hover:scale-110
-            "
+                      h-10
+                      w-10
+                      object-contain
+                      transition-transform
+                      duration-300
+                      group-hover:scale-110
+                    "
                   />
 
                   <span className="mt-3 text-center text-sm font-medium text-slate-700">
