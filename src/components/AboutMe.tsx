@@ -1,7 +1,7 @@
 export function AboutMe() {
   return (
     <section id="about-me" className="mx-auto max-w-7xl px-6 py-10 lg:py-20">
-      <div className="mb-10 text-center">
+      <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold text-slate-900 lg:text-4xl">
           Olá! Meu nome é Roberto
         </h2>

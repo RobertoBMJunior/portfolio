@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Dumbbell } from 'lucide-react'
+import { Dumbbell, FolderKanban } from 'lucide-react'
 import { CardExperience } from './cards/CardExperience'
 
 export function Experience() {
@@ -20,7 +20,7 @@ export function Experience() {
       url_project: 'https://treinopronto.com/',
     },
     {
-      icon: BriefcaseBusiness,
+      icon: FolderKanban,
       title: 'Desenvolvedor Front-end Freelancer',
       period: '12/2024 – 01/2025',
       description:
@@ -37,12 +37,8 @@ export function Experience() {
   ]
 
   return (
-    <section id="experience" className="mx-auto max-w-7xl px-6 py-24">
-      <div className="mb-14 text-center">
-        <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
-          Experiência
-        </span>
-
+    <section id="experience" className="mx-auto max-w-7xl px-6 py-10">
+      <div className="mb-10 text-center">
         <h2 className="mt-3 text-3xl font-bold text-slate-900 lg:text-4xl">
           Experiência prática em projetos reais
         </h2>
