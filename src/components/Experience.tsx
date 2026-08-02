@@ -44,9 +44,8 @@ export function Experience() {
         </h2>
 
         <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-500">
-          Experiência no desenvolvimento de aplicações web modernas, utilizando
-          tecnologias atuais e boas práticas para entregar sites rápidos,
-          responsivos e com excelente experiência para o usuário.
+          Experiência no desenvolvimento de aplicações web modernas utilizando
+          tecnologias atuais.
         </p>
       </div>
 

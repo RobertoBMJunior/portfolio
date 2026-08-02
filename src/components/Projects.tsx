@@ -31,7 +31,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-25 px-6 pt-5 pb-10 bg-gradient-to-b from-white to-slate-100"
+      className="scroll-mt-25 px-6 pt-5 pb-12 bg-gradient-to-b from-white to-slate-100"
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 text-center">
