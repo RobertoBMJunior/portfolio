@@ -12,7 +12,7 @@ export function Header() {
 
   const telefone = '5561999743703'
   const mensagem = encodeURIComponent(
-    'Olá! Fiquei interessado nos seus serviços, vamos conversar?'
+    'Olá! Vi o seu portfólio. Vamos conversar?'
   )
   const whatsappUrl = `https://wa.me/${telefone}?text=${mensagem}`
 
@@ -58,10 +58,10 @@ export function Header() {
           <nav className="hidden lg:block">
             <ul className="flex gap-10">
               {[
+                ['Sobre mim', '#about-me'],
                 ['Projetos', '#projects'],
-                ['Serviços', '#services'],
                 ['Tecnologias', '#technologies'],
-                ['Contato', '#contacts'],
+                ['Contato', '#footer'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <a
@@ -192,21 +192,21 @@ export function Header() {
         <ul className="flex flex-col">
           <li>
             <a
-              href="#projects"
+              href="#about-me"
               onClick={closeMenu}
               className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >
-              Projetos
+              Sobre mim
             </a>
           </li>
 
           <li>
             <a
-              href="#services"
+              href="#projects"
               onClick={closeMenu}
               className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >
-              Serviços
+              Projetos
             </a>
           </li>
 
@@ -222,7 +222,7 @@ export function Header() {
 
           <li>
             <a
-              href="#contacts"
+              href="#footer"
               onClick={closeMenu}
               className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >

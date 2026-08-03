@@ -11,17 +11,17 @@ import {
 
 export function Hero() {
   const technologies = [
-                { name: 'Next.js', image: '/nextjs.svg' },
-                { name: 'React', image: '/reactjs.webp' },
-                { name: 'TypeScript', image: '/typescript.png' },
-                { name: 'Node.js', image: '/node.png' },
-                { name: 'Tailwind', image: '/tailwind.png' },
-                { name: 'JavaScript', image: '/Javascript.png' },
-                { name: 'Git', image: '/git.png' },
-                { name: 'HTML5', image: '/html.png' },
-                { name: 'CSS3', image: '/css.png' },
-                { name: 'Figma', image: '/figma.png' },
-              ]
+    { name: 'Next.js', image: '/nextjs.svg' },
+    { name: 'React', image: '/reactjs.webp' },
+    { name: 'TypeScript', image: '/typescript.png' },
+    { name: 'Node.js', image: '/node.png' },
+    { name: 'Tailwind', image: '/tailwind.png' },
+    { name: 'JavaScript', image: '/Javascript.png' },
+    { name: 'Git', image: '/git.png' },
+    { name: 'HTML5', image: '/html.png' },
+    { name: 'CSS3', image: '/css.png' },
+    { name: 'Figma', image: '/figma.png' },
+  ]
 
   return (
     <section
@@ -138,7 +138,10 @@ export function Hero() {
               Tecnologias que utilizo
             </p>
 
-            <div className="grid grid-cols-3 gap-4 sm:grid-cols-5">
+            <div
+              id="technologies"
+              className="grid grid-cols-3 gap-4 sm:grid-cols-5 scroll-mt-25"
+            >
               {technologies.map((tech) => (
                 <div
                   key={tech.name}

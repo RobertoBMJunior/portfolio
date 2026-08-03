@@ -14,7 +14,10 @@ export function Footer() {
   const whatsappUrl = `https://wa.me/${telefone}?text=${mensagem}`
 
   return (
-    <footer className="border-t border-slate-800 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 pt-5">
+    <footer
+      id="footer"
+      className="border-t border-slate-800 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 pt-5"
+    >
       <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-6 md:flex-row md:items-center md:justify-between">
         {/* Esquerda */}
         <div className="max-w-md text-center md:text-left">
@@ -31,6 +34,7 @@ export function Footer() {
             href={whatsappUrl}
             target="_blank"
             className="rounded-full p-2 text-slate-400 transition-colors hover:text-green-400 flex gap-2 flex-col items-center md:flex-row md:items-start"
+            title="WhatsApp"
           >
             <WhatsappLogoIcon size={28} weight="fill" />
             {/* <span>(61) 99974-3703</span> */}
@@ -40,6 +44,7 @@ export function Footer() {
             href="https://github.com/RobertoBMJunior"
             target="_blank"
             className="rounded-full p-2 text-slate-400 transition-colors hover:text-white flex gap-2 flex-col items-center md:flex-row md:items-start"
+            title="Github"
           >
             <GithubLogoIcon size={28} weight="fill" />
             {/* <span>RobertoBMJunior</span> */}
@@ -48,6 +53,7 @@ export function Footer() {
             href="https://www.linkedin.com/in/roberto-j%C3%BAnior-944551184/"
             target="_blank"
             className="rounded-full p-2 text-slate-400 transition-colors hover:text-blue-400 flex gap-2 flex-col items-center md:flex-row md:items-start"
+            title="Linkedin"
           >
             <LinkedinLogoIcon size={28} weight="fill" />
             {/* <span>roberto-júnior-944551184</span> */}
