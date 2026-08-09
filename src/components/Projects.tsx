@@ -6,24 +6,40 @@ const projects = [
     image: '/treinopronto.png',
     href: 'https://treinopronto.com',
     description:
-      'Plataforma para geração personalizada de treinos com foco em desempenho, SEO e excelente experiência do usuário.',
+      'Site feito com Next.js + TypeScript + Tailwind. Plataforma para geração personalizada de treinos com foco em desempenho, SEO e excelente experiência do usuário.',
     button: 'Visitar site',
   },
   {
-    title: 'Site para Clínica',
+    title: 'Clínica Odontológica',
     image: '/clinica-odontologica.png',
     href: 'https://sites-profissionais-ashy.vercel.app/',
     description:
-      'Site institucional desenvolvido para transmitir credibilidade, apresentar serviços e facilitar o contato entre pacientes e a clínica.',
-    button: 'Visitar site',
+      'Projeto feito com Next.js + TypeScript + Tailwind. Site institucional desenvolvido para transmitir credibilidade, apresentar serviços e facilitar o contato entre pacientes e a clínica.',
+    button: 'Visualizar projeto',
   },
   {
-    title: 'Landing Page',
+    title: 'GitHub Blog',
+    image: '/GithubBlog.png',
+    href: 'https://github-blog-kappa-ten.vercel.app/',
+    description:
+      'Este é um projeto feito em React com TypeScript na qual é possível visualizar as issues de um repositório do GitBub.',
+    button: 'Visualizar projeto',
+  },
+  {
+    title: 'Coffee Delivery',
     image: '/coffee-Delivery.PNG',
     href: 'https://coffee-delivery-ten-blond.vercel.app/',
     description:
-      'Landing page criada para demonstrar interfaces modernas, navegação intuitiva e design focado na experiência do usuário.',
-    button: 'Visitar site',
+      'Este é um projeto feito em React com TypeScript na qual é possível gerenciar um carrinho de compras de uma cafeteria fictícia',
+    button: 'Visualizar projeto',
+  },
+  {
+    title: 'To Do List',
+    image: '/todo-list.PNG',
+    href: 'https://robertobmjunior.github.io/ToDo-List/',
+    description:
+      'Este é o projeto de uma Lista de Tarefas feito em React com TypeScript. Os dados da aplicação ficam salvos no LocalStorage do navegador.',
+    button: 'Visualizar projeto',
   },
 ]
 
