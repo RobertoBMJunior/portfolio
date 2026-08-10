@@ -1,13 +1,4 @@
 import Image from 'next/image'
-import {
-  ArrowDown,
-  BracketsCurly,
-  DeviceMobile,
-  GithubLogo,
-  Lightning,
-  LinkedinLogo,
-  Sparkle,
-} from '@phosphor-icons/react/dist/ssr'
 
 export function Hero() {
   const technologies = [
@@ -42,10 +33,6 @@ export function Hero() {
         "
       >
         <div className="order-2 text-center lg:order-1 lg:text-left">
-          {/* <span className="inline-block rounded-full bg-blue-100 px-6 py-2.5 text-sm font-bold text-blue-600">
-            Dev Full Stack
-          </span> */}
-
           <h1
             className="
               mt-6
@@ -100,8 +87,9 @@ export function Hero() {
             </a>
 
             <a
-              href="/curriculo.pdf"
+              href="/Curriculo.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="
                 inline-flex
                 items-center
@@ -120,7 +108,7 @@ export function Hero() {
                 hover:border-amber-600
               "
             >
-              Download CV
+              Visualizar Currículo
             </a>
           </div>
 
@@ -187,8 +175,6 @@ export function Hero() {
             </div>
           </div>
         </div>
-
-        {/* Foto */}
 
         <div
           className="
