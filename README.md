@@ -17,7 +17,7 @@ Portfólio desenvolvido para apresentar meus projetos, minha experiência e as t
 
 ## Acesse
 
-(VOU EDITAR DEPOIS)
+https://portfolio-fawn-tau-14.vercel.app/
 
 ## Contato
 
